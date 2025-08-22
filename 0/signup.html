@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Akaunt ochish — Git UZ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="auth-page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><div class="logo">🔥</div><a href="index.html" class="brand-title">Git UZ</a></div>
+      <nav class="nav">
+        <a href="about.html">Git nima?</a>
+        <a href="commands.html">Buyruqlar</a>
+        <a href="tutorials.html">Darslar</a>
+        <a href="download.html">Yuklab olish</a>
+        <a href="signup.html" class="btn btn-primary">Akaunt ochish</a>
+      </nav>
+      <button id="themeToggle" class="theme-btn">🌙</button>
+    </div>
+  </header>
+
+  <main class="container auth-content">
+    <div class="auth-card">
+      <h2>Akaunt ochish</h2>
+      <p class="muted">Ro‘yxatdan o‘tish juda oson — email va 4-10 belgidan iborat kod kiriting.</p>
+
+      <form id="signupForm" class="form">
+        <label>Email</label>
+        <input id="email" type="email" placeholder="example@mail.com" required />
+
+        <label>Akaunt kodi (4-10 belgidan)</label>
+        <input id="code" type="password" minlength="4" maxlength="10" placeholder="XXXX" required />
+
+        <button type="submit" class="btn btn-primary">Ro‘yxatdan o‘tish</button>
+      </form>
+
+      <p id="signupMsg" class="result hidden"></p>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><p>© <span id="year6"></span> Git UZ</p></div></footer>
+  <button id="toTop" class="to-top">⬆</button>
+  <script src="script.js"></script>
+</body>
+</html>
